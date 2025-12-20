@@ -20,9 +20,9 @@ Persistência de Dados: Geração automática de relatórios diários datados pa
 
 🛠️ Tecnologias Utilizadas
 
-Linguagem: Python 3.11
+		Linguagem: Python 3.11
 
-Bibliotecas: BeautifulSoup4 (Parsing), Requests (HTTP) e CSV (Dados).
+		Bibliotecas: BeautifulSoup4 (Parsing), Requests (HTTP) e CSV (Dados).
 
 Mensageria: Telegram Bot API.
 
@@ -41,20 +41,20 @@ Mensageria: Telegram Bot API.
 
 Para o robô conseguir te enviar mensagens, você precisa de duas informações do Telegram:
 
-TOKEN_BOT: Mande uma mensagem para o @BotFather no Telegram. Ele vai te dar uma chave secreta após você criar seu bot.
+	TOKEN_BOT: Mande uma mensagem para o @BotFather no Telegram. Ele vai te dar uma chave secreta após você criar seu bot.
 
-CHAT_ID: É o seu endereço pessoal no Telegram. Você pode descobrir o seu enviando uma mensagem para o bot @userinfobot.
+	CHAT_ID: É o seu endereço pessoal no Telegram. Você pode descobrir o seu enviando uma mensagem para o bot @userinfobot.
 
 
 2. Instalação
 
-pip install beautifulsoup4 requests
+		pip install beautifulsoup4 requests
 
 
 
 3. Execução
 
-python vagas_estagio_inatel_github.py
+		python vagas_estagio_inatel_github.py
 
 
 
