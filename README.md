@@ -61,7 +61,7 @@ pip install beautifulsoup4 requests
 ### 3. Execução
 
 ```bash
-python vagas_estagio_inatel_github.py
+python vagas_inatel.py
 
 ```
 
