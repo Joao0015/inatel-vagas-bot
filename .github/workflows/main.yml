@@ -5,6 +5,10 @@ on:
     - cron: '0 12 * * *' # Isso faz ele rodar todo dia às 9h da manhã (horário de Brasília)
   workflow_dispatch: # Isso cria um botão para você testar na hora que quiser
 
+env:
+          MEU_TOKEN: ${{ secrets.TOKEN_BOT }} # Pega do cofre e dá o nome de MEU_TOKEN
+          MEU_ID: ${{ secrets.ID_BOT }}
+          
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,3 +23,4 @@ jobs:
 
       - name: Rodando o script
         run: python vagas_inatel.py
+        
