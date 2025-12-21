@@ -80,11 +80,31 @@ python vagas_inatel.py
 
 ## 🤖 Configuração da Automação (GitHub Actions)
 
-Se você deseja que o robô rode sozinho todos os dias na nuvem:
+### 🛠️ Como ativar o "Motor" (GitHub Actions) do zero
 
-1. **Secrets:** No GitHub, vá em `Settings > Secrets and variables > Actions` e crie as chaves `TOKEN_BOT` e `MEU_CHAT_ID`.
-2. **Permissões:** Em `Settings > Actions > General`, habilite **"Read and write permissions"** para que o robô consiga salvar o histórico de vagas no repositório.
-3. **Workflow:** O arquivo `.github/workflows/main.yml` já está configurado para despertar o robô diariamente às 09h (BRT).
+Se você acabou de copiar este projeto para sua conta, o robô ainda está "desligado". Siga estes passos para ele começar a trabalhar:
+
+1. **Crie o arquivo de comando:**
+* No seu repositório, clique em `Add file` > `Create new file`.
+* No nome do arquivo, digite exatamente: `.github/workflows/main.yml` (o GitHub criará as pastas sozinho).
+* Cole o código do arquivo `main.yml` que está neste repositório.
+
+
+2. **Coloque as pilhas (Secrets):**
+* Vá em `Settings` > `Secrets and variables` > `Actions`.
+* Clique em `New repository secret` e adicione o `TOKEN_BOT` e o `MEU_CHAT_ID` (conforme explicado na seção do Telegram).
+
+
+3. **Dê a chave da oficina (Permissions):**
+* O robô precisa de permissão para salvar o histórico no seu GitHub.
+* Vá em `Settings` > `Actions` > `General`.
+* Lá no final, em **Workflow permissions**, mude para **Read and write permissions** e clique em **Save**.
+
+
+4. **Teste o motor:**
+* Vá na aba `Actions` no topo do site.
+* Clique em `Robo_Vagas_Inatel` à esquerda.
+* Clique no botão `Run workflow` para ver se ele acorda agora mesmo!
 
 ---
 
