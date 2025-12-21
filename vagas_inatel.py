@@ -84,6 +84,8 @@ while start <= 10:
     print(f"Página {start} processada.")
     start += 1
 
+if(novas_vagas_count == 0):
+    enviar_telegram("❌SEM NOVAS VAGAS! ")
 
 # 3. Agora reescrevemos o histórico do zero ("w") apenas com o que encontramos na run atual
 hoje = date.today().strftime("%d-%m-%Y")
