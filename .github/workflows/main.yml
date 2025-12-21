@@ -1,0 +1,21 @@
+name: Robo_Vagas_Inatel
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # Isso faz ele rodar todo dia às 9h da manhã (horário de Brasília)
+  workflow_dispatch: # Isso cria um botão para você testar na hora que quiser
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # O robô "pega" seu código
+      - uses: actions/setup-python@v5 # O robô "instala" o Python
+        with:
+          python-version: '3.10'
+      
+      - name: Instalando bibliotecas
+        run: pip install requests beautifulsoup4 # Coloque aqui as bibliotecas que você usou
+
+      - name: Rodando o script
+        run: python vagas_inatel.py
