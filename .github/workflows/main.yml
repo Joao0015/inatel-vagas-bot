@@ -2,12 +2,16 @@ name: Robo_Vagas_Inatel
 
 on:
   schedule:
-    - cron: '0 12 * * *' # Todo dia às 9h da manhã (Brasília)
+    - cron: '0 12 * * *' 
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # ESSA LINHA ABAIXO É A CHAVE MESTRA:
+    permissions:
+      contents: write
+      
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,7 +22,6 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Rodando o script
-      
         env:
           MEU_TOKEN: ${{ secrets.TOKEN_BOT }}
           MEU_CHAT_ID: ${{ secrets.MEU_CHAT_ID }} 
@@ -29,5 +32,4 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add vagas_estagio_inatel.csv
-          # O comando abaixo só salva se o arquivo realmente mudou
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Bot: Atualizando vagas antigas" && git push)
