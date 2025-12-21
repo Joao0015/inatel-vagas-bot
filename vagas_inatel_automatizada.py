@@ -5,8 +5,8 @@ import csv
 import os
 
 # --- CONFIGURAÇÃO DO BOT ---
-TOKEN_BOT = "SEU_TOKEN_AQUI"
-MEU_CHAT_ID = "SEU_USER_ID_DO_TELEGRAM_AQUI"
+TOKEN_BOT = os.getenv('MEU_TOKEN')
+MEU_CHAT_ID = os.getenv('MEU_CHAT_ID')
 
 def enviar_telegram(mensagem):
     url = f"https://api.telegram.org/bot{TOKEN_BOT}/sendMessage"
