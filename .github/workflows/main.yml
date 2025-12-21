@@ -22,5 +22,5 @@ jobs:
         run: pip install requests beautifulsoup4 # Coloque aqui as bibliotecas que você usou
 
       - name: Rodando o script
-        run: python vagas_inatel.py
+        run: python vagas_inatel_automatizada.py
         
