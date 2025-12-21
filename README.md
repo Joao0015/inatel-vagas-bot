@@ -46,9 +46,10 @@ Como o projeto evoluiu, agora temos arquivos específicos para cada situação:
 ## 📸 Demonstração
 
 <div align="center">
-<img height="500" alt="image" src="[https://github.com/user-attachments/assets/4e7cd34a-1b99-4d93-bc4c-5122db10cc21](https://github.com/user-attachments/assets/4e7cd34a-1b99-4d93-bc4c-5122db10cc21)" />
-<img  height="700" alt="image" src="[https://github.com/user-attachments/assets/de93c482-3ea3-4872-94c5-97775f480bff](https://github.com/user-attachments/assets/de93c482-3ea3-4872-94c5-97775f480bff)" />
-</div>
+
+  <img height="500" alt="image" src="https://github.com/user-attachments/assets/4e7cd34a-1b99-4d93-bc4c-5122db10cc21" />
+
+  <img  height="700" alt="image" src="https://github.com/user-attachments/assets/de93c482-3ea3-4872-94c5-97775f480bff" />
 
 ---
 
